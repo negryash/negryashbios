@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="negryash - Дизайнер и геймер. 4 года опыта в создании минималистичных интерфейсов." />
+    <meta name="keywords" content="дизайн, UI/UX, геймер, портфолио, минимализм, negryash" />
+    <meta name="author" content="negryash" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://negryash.github.io/" />
+    <meta property="og:title" content="negryash's bio - Дизайнер и геймер" />
+    <meta property="og:description" content="Портфолио дизайнера с 4-летним опытом. Минималистичный черно-белый дизайн." />
+    <meta property="og:image" content="/favicon.svg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://negryash.github.io/" />
+    <meta property="twitter:title" content="negryash's bio - Дизайнер и геймер" />
+    <meta property="twitter:description" content="Портфолио дизайнера с 4-летним опытом. Минималистичный черно-белый дизайн." />
+    <meta property="twitter:image" content="/favicon.svg" />
+
+    <title>negryash's bio - Дизайнер и геймер</title>
+    
+    <!-- Preload важных ресурсов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Дополнительные мета теги для производительности -->
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="color-scheme" content="light dark" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://negryash.github.io/" />
+    
+    <style>
+      /* Критический CSS для быстрой загрузки */
+      html { font-size: 14px; }
+      body { 
+        margin: 0; 
+        font-family: system-ui, -apple-system, sans-serif;
+        background: #ffffff;
+        color: #030213;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .dark body {
+        background: #030213;
+        color: #ffffff;
+      }
+      /* Loader */
+      #root:empty::before {
+        content: '';
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        margin: -20px 0 0 -20px;
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #030213;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Структурированные данные -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "negryash",
+      "jobTitle": "UI/UX Designer",
+      "description": "Дизайнер с 4-летним опытом создания минималистичных интерфейсов",
+      "url": "https://negryash.github.io",
+      "sameAs": [
+        "https://tiktok.com/@swmakxp",
+        "https://t.me/scarydildo"
+      ]
+    }
+    </script>
+  </body>
+</html>
